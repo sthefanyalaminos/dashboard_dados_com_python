@@ -51,7 +51,7 @@ li:hover {
     color: white !important;
 }
             
-            /* Chips (itens selecionados no multiselect) */
+/* Chips (itens selecionados no multiselect) */
 div[data-baseweb="tag"] {
     background-color: #2563EB !important;
     color: white !important;
@@ -69,7 +69,7 @@ div[data-baseweb="tag"] svg {
     fill: #DBEAFE !important;
 }
             
-            span[data-baseweb="tag"] {
+span[data-baseweb="tag"] {
     background-color: #2563EB !important;
 }
 
@@ -88,28 +88,34 @@ st.sidebar.header("🔍 Filtros")
 
 # Filtro de Ano
 anos_disponiveis = sorted(df['ano'].unique())
-anos_selecionados = st.sidebar.multiselect("Ano", anos_disponiveis, default=anos_disponiveis)
+anos_selecionados = st.sidebar.multiselect("Ano", anos_disponiveis)
 
 # Filtro de Senioridade
 senioridades_disponiveis = sorted(df['senioridade'].unique())
-senioridades_selecionadas = st.sidebar.multiselect("Senioridade", senioridades_disponiveis, default=senioridades_disponiveis)
+senioridades_selecionadas = st.sidebar.multiselect("Senioridade", senioridades_disponiveis)
 
 # Filtro por Tipo de Contrato
 contratos_disponiveis = sorted(df['contrato'].unique())
-contratos_selecionados = st.sidebar.multiselect("Tipo de Contrato", contratos_disponiveis, default=contratos_disponiveis)
+contratos_selecionados = st.sidebar.multiselect("Tipo de Contrato", contratos_disponiveis)
 
 # Filtro por Tamanho da Empresa
 tamanhos_disponiveis = sorted(df['tamanho_empresa'].unique())
-tamanhos_selecionados = st.sidebar.multiselect("Tamanho da Empresa", tamanhos_disponiveis, default=tamanhos_disponiveis)
+tamanhos_selecionados = st.sidebar.multiselect("Tamanho da Empresa", tamanhos_disponiveis)
 
 # --- Filtragem do DataFrame ---
 # O dataframe principal é filtrado com base nas seleções feitas na barra lateral.
-df_filtrado = df[
-    (df['ano'].isin(anos_selecionados)) &
-    (df['senioridade'].isin(senioridades_selecionadas)) &
-    (df['contrato'].isin(contratos_selecionados)) &
-    (df['tamanho_empresa'].isin(tamanhos_selecionados))
-]
+df_filtrado = df.copy()
+if anos_selecionados:
+    df_filtrado = df_filtrado[df_filtrado["ano"].isin(anos_selecionados)]
+
+if senioridades_selecionadas:
+    df_filtrado = df_filtrado[df_filtrado["senioridade"].isin(senioridades_selecionadas)]
+
+if contratos_selecionados:
+    df_filtrado = df_filtrado[df_filtrado["contrato"].isin(contratos_selecionados)]
+
+if tamanhos_selecionados:
+    df_filtrado = df_filtrado[df_filtrado["tamanho_empresa"].isin(tamanhos_selecionados)]
 
 # --- Conteúdo Principal ---
 st.title("🎲 Dashboard de Análise de Salários na Área de Dados")

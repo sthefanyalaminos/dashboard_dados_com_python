@@ -82,7 +82,7 @@ span[data-baseweb="tag"] {
 
 
 # --- Carregamento dos dados ---
-@st.cache_data
+@st.cache_data(ttl=0)
 def load_data():
     return pd.read_csv(
         "https://raw.githubusercontent.com/vqrca/dashboard_salarios_dados/refs/heads/main/dados-imersao-final.csv"

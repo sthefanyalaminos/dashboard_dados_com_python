@@ -204,6 +204,11 @@ st.subheader(t["charts"])
 df_graf = df_filtrado.copy()
 df_graf["remoto"] = df_graf["remoto"].map(rem_map).fillna(df_graf["remoto"])
 
+# LINHAS DE DEBUG — remover depois:
+st.write("Idioma:", language)
+st.write("rem_map:", rem_map)
+st.write("Valores únicos remoto:", df_graf["remoto"].unique().tolist())
+
 col_graf1, col_graf2 = st.columns(2)
 
 with col_graf1:

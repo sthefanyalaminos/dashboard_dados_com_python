@@ -3,7 +3,17 @@ O Dashboard foi desenvolvido com o objetivo de realizar análise exploratória d
 
 A aplicação transforma dados brutos em visualizações organizadas, facilitando a identificação de padrões, tendências e possíveis insights relevantes para tomada de decisão.
 
+<div align="right">
+<a href="https://dashboard-dadoscompython-alura2026-sthefanyalaminos.streamlit.app/">Clique aqui para acessar!</a>
+</div>
 
+
+<img src="imagens_readme/img_dash.png">
+<img src="imagens_readme/img_graph.png">
+<img src="imagens_readme/img_graph2.png">
+<img src="imagens_readme/img_data.png">
+
+---
 ## Objetivo: 
 Aplicar os conceitos aprendidos durante as aulas, envolvendo: 
 - Limpeza e preparação de dados;

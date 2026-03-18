@@ -71,7 +71,7 @@ translations = {
         "chart_map_color": "Average Salary (USD)",
         "chart_map_location": "Country",
 
-        "detailed_data": "Detailed Data"
+        "detailed_data": "Detailed Data",
 
         "warn_roles": "No data to display in the roles chart.",
         "warn_dist": "No data to display in the distribution chart.",

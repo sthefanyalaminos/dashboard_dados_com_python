@@ -14,7 +14,7 @@ The application transforms raw data into organized visualizations, making it eas
 <img src="imagens_readme/img_graph2en.png">
 <img src="imagens_readme/img_dataen.png">
 
-## Objective:
+## Objective
 Apply the concepts learned during classes, involving:
 - Data cleaning and preparation;
 - Application of simple filters;
@@ -22,7 +22,7 @@ Apply the concepts learned during classes, involving:
 - Statistical analysis;
 - Building interactive visualizations.
 
-## Technologies Used:
+## Technologies Used
 - Python;
 - Pandas;
 - Streamlit;
@@ -64,5 +64,5 @@ This improvement makes data exploration more practical and flexible.
 ### Multi-Language Support
 The option to view the dashboard in Portuguese and English was implemented, allowing users from different contexts to explore the application. This feature broadens the project's reach and improves its accessibility for an international audience.
 
-## Authorship:
+## Authorship
 Project developed based on Imersão - Dados com Python, offered by Alura, with final modifications by Sthefany Alaminos, for the study and consolidation of knowledge in Python and data analysis.

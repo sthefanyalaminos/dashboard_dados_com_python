@@ -16,7 +16,7 @@ A aplicação transforma dados brutos em visualizações organizadas, facilitand
 <img src="imagens_readme/img_data.png">
 
 ---
-## Objetivo: 
+## Objetivo
 Aplicar os conceitos aprendidos durante as aulas, envolvendo: 
 - Limpeza e preparação de dados;
 - Aplicação de filtros simples;
@@ -25,7 +25,7 @@ Aplicar os conceitos aprendidos durante as aulas, envolvendo:
 - Construção de visualizações interativas.
 
 
-## Tecnologias utilizadas:
+## Tecnologias utilizadas
 - Python;
 - Pandas;
 - Streamlit;
@@ -65,7 +65,7 @@ Essa melhoria torna a exploração dos dados mais prática e flexível.
 Foi implementada a opção de visualização do dashboard em português e inglês, permitindo que usuários de diferentes contextos possam explorar a aplicação. Essa funcionalidade amplia o alcance do projeto e melhora sua acessibilidade para um público internacional.
 
 
-## Autoria:
+## Autoria
 
 Projeto desenvolvido a partir da Imersão - Dados com Python, oferecida pela Alura, com modificações finalizadas por Sthefany Alaminos, para estudo e consolidação de conhecimentos em Python e análise de dados.
 
